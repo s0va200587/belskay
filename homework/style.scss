@@ -25,7 +25,7 @@ strong {
     background-position: center;
     background-size: cover;
     
-    &_h1 {
+    &__h1 {
         color: rgb(32, 32, 39);
         font-size: 64px;
         font-weight: 700;
@@ -34,7 +34,7 @@ strong {
         padding-bottom: 24px;
     }
 
-    &_p {
+    &__p {
         color: rgb(32, 32, 39);
         font-size: 24px;
         font-weight: 400;
@@ -42,7 +42,7 @@ strong {
         letter-spacing: 0px;
         text-align: left;
     }
-    &_button {
+    &__button {
         position: static;
         width: 247px;
         height: 66px;
@@ -72,7 +72,7 @@ strong {
     background-position: center;
     background-size: cover;
 
-    &_h2 {
+    &__h2 {
         color: rgb(255, 255, 255);
         font-size: 64px;
         font-weight: 700;
@@ -82,7 +82,7 @@ strong {
         padding-top: 94px;
         padding-bottom: 24px;
     }
-    &_p {
+    &__p {
         color: rgb(255, 255, 255);
         font-size: 24px;
         font-weight: 400;
@@ -91,13 +91,13 @@ strong {
         text-align: left;
         
     }
-    &_a {
+    &__a {
         display: inline-block; 
         text-decoration: none; 
         color: inherit; 
         /*outline: 1px solid red;*/ 
     }
-    &_a:hover .article {
+    &__a:hover .article {
         background: #f0f0f0;
     }
     &__content {
@@ -112,14 +112,14 @@ strong {
     border-radius: 30px;
     background: rgb(247, 247, 247);
 
-    &_image {
+    &__image {
         border-radius: 30px 30px;
         width: 100%;
     }
-    &_text {
+    &__text {
         padding: 32px 32px 36px 32px;
     }
-    &_number {
+    &__number {
         border-radius: 52.58px;
         background: rgb(247, 247, 247);
         color: rgb(32, 32, 39);
@@ -131,7 +131,7 @@ strong {
         text-align: left;
         padding-bottom: 16px;
     }
-    &_name {
+    &__name {
         color: rgb(32, 32, 39);
         font-family: Montserrat;
         font-size: 32px;
