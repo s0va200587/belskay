@@ -92,10 +92,16 @@ strong {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  transition: transform 0.3s ease;
   /*outline: 1px solid red;*/
 }
 .product-box__a:hover .article {
-  background: #f0f0f0;
+  background: rgb(247, 247, 247);
+  transform: scale(1.07);
+}
+.product-box__a_viktorina {
+  align-items: flex-end;
+  display: flex;
 }
 .product-box__content {
   padding-top: 72px;
@@ -136,4 +142,50 @@ strong {
   line-height: 39px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .top__h1 {
+    color: rgb(32, 32, 39);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top__p {
+    color: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top__button {
+    position: static;
+    width: 285px;
+    height: 55px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .obigrah {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

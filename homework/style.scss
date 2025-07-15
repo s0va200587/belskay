@@ -95,10 +95,16 @@ strong {
         display: inline-block; 
         text-decoration: none; 
         color: inherit; 
+        transition: transform 0.3s ease;
         /*outline: 1px solid red;*/ 
     }
     &__a:hover .article {
-        background: #f0f0f0;
+        background: rgb(247, 247, 247);
+        transform: scale(1.07);
+    }
+    &__a_viktorina {
+        align-items: flex-end;
+        display: flex;
     }
     &__content {
         padding-top: 72px;
@@ -141,3 +147,4 @@ strong {
         text-align: left;
     }
 }
+@import 'mobile';
