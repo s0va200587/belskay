@@ -2,74 +2,63 @@
 
 // 1 задание
 
-let a = 10;
-alert (a);
-a = 20;
-alert (a);
+let password = 'пароль';
+let userPass = prompt('Введите пароль');
+if (userPass === password) {
+    alert('Пароль введен верно')
+} else alert('Пароль введен неверно')
 
 // 2 задание
 
-const DateIphone = 2007;
-alert (DateIphone);
+let c = 7;
+if (c >= 0 && c <=10 ) {
+    alert('верно')
+} else alert('неверно')
 
 // 3 задание
 
-const NameJS = 'Brendan Eich';
-alert ('Brendan Eich');
+let d = 7;
+let e = 22;
+if (d > 100 || e > 100 ) {
+    alert('верно')
+} else { 
+    alert('неверно')
+}
 
 // 4 задание
 
-a = 10;
-let b = 2;
-alert (a+b);
-alert (a-b);
-alert (a*b);
-alert (a/b);
+let a = '2';
+let b = '3';
+// Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
+alert(+a + +b);
 
 // 5 задание
 
-let result = b ** 5;
-alert (result);
+let monthNumber = Number(prompt('Введите номер месяца'));
 
-// 6 задание
-
-// Даны переменные: a = 9 и b = 2. Найдите остаток от деления  a на b и выведите результат на экран с помощью метода alert().
-
-let c = 9;
-let rest = c % b;
-alert (rest);
-
-// 7 задание
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num ++;
-num --;
-alert(num);
-
-// 8 задание
-
-let age = prompt ('Сколько вам лет?');
-alert (age);
-
-// 9 задание
-
-const user = {
-    name: 'Геннадий',
-    age: 52,
-    isAdmin: true
-};
-alert(`Имя: ${user.name}\nВозраст: ${user.age}\nАдмин: ${user.isAdmin}`);
-// 10 задание
-
-const userName = prompt('Как вас зовут?');
-alert(`Привет, ${userName}`);
-
-
-// 11 допзадание
-
-// 12 задание
-
-// 13 задание
+if (monthNumber >= 13) {
+    alert('Вы ввели некорректное число')
+} else {
+    switch (monthNumber) {
+        case 1: 
+        case 2:    
+        case 12:   
+            alert('Сезон: Зима!') 
+            break;
+        case 3: 
+        case 4:     
+        case 5:   
+            alert('Сезон: Весна!') 
+                break;
+        case 6: 
+        case 7:     
+        case 8:    
+            alert('Сезон: Лето!') 
+            break;
+        case 9:
+        case 10:    
+        case 11:    
+            alert('Сезон: Осень!') 
+            break;   
+    }
+}
